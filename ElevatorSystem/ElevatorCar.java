@@ -30,7 +30,7 @@ public class ElevatorCar {
         return 0;
     }
 
-    public ElevatorState getCurrentElevatorState() {
+    public ElevatorState getState() {
         return null;
     }
 

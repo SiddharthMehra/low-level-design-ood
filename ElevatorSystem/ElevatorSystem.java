@@ -6,16 +6,14 @@ import java.util.List;
 
 public class ElevatorSystem {
 
-    private static ElevatorSystem elevatorSystem;
+    private static volatile ElevatorSystem instance;
     private final Building building;
 
     private ElevatorSystem(int numFloors, int cars, Building building) {
         this.building = building;
     }
 
-    public List<ElevatorCar> getElevatorCars() {
-        return null;
-    }
+    public List<ElevatorCar> getCars() { return null; }
 
     public Building getBuilding() {
         return null;
@@ -31,7 +29,5 @@ public class ElevatorSystem {
     public void monitoring() {}
 
 
-    public static ElevatorSystem getInstance(int floors, int cars) {
-        return null;
-    }
+    public static ElevatorSystem getInstance(int floors, int cars) { return null; }
 }
