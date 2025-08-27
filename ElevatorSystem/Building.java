@@ -8,17 +8,27 @@ public class Building {
 
     private final List<ElevatorCar> elevatorCars;
 
-    public Building(List<Floor> numFloors, List<ElevatorCar> numCars, int numPanels, int numDisplaysPerFloor) {
-        this.floors = numFloors;
-        this.elevatorCars = numCars;
+    private final int numPanels;
+    private final int numDisplaysPerFloor;
+
+    public Building(List<Floor> floors, List<ElevatorCar> cars,int numPanels, int numDisplaysPerFloor) {
+        this.floors = floors;
+        this.elevatorCars = cars;
+        this.numPanels = numPanels;
+        this.numDisplaysPerFloor = numDisplaysPerFloor;
     }
 
     public List<Floor> getFloors () {
-        return null;
+        return floors;
     }
 
     public List<ElevatorCar> getElevatorCars() {
-        return null;
+        return elevatorCars;
     }
-
+        public int getNumPanels () {
+            return numPanels;
+        }
+        public int getNumDisplaysPerFloor() {
+            return numDisplaysPerFloor;
+        }
 }
